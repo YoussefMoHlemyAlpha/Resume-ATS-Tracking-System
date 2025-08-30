@@ -6,15 +6,17 @@ This project allows users to upload their resumes (PDF) and compare them against
 
 ### Features
 
--Upload PDF Resumes – Extracts text from uploaded PDF files.
+-Upload PDF Resumes – Converts PDF to images and processes them for AI evaluation.
 
--ATS Evaluation – Provides insights into resume strengths and weaknesses.
+-ATS Evaluation – Provides insights on how well the resume aligns with the job description.
 
--Missing Keywords Detection – Highlights job-relevant keywords missing from the resume.
+-Missing Keywords Detection – Highlights job-relevant keywords that are missing.
 
--Match Percentage – Estimates how well a resume matches a given job description.
+-Match Percentage – Gives a quantitative match score.
 
--Streamlit Web Interface – User-friendly, interactive web app.
+-Interactive Web App – User-friendly interface using Streamlit.
+
+-Custom Background – Supports custom app background images.
 
 <img width="1801" height="670" alt="image" src="https://github.com/user-attachments/assets/e6a844ba-b0be-4b3d-b125-bce415f1c976" />
 <img width="1918" height="761" alt="image" src="https://github.com/user-attachments/assets/5101828b-894e-4be9-b3fb-1520ce2e69cc" />
@@ -26,10 +28,8 @@ This project allows users to upload their resumes (PDF) and compare them against
 
 ## How it Works
 
--PDF to Text – PyPDF2 extracts raw text from uploaded resumes.
+-PDF Processing – Converts the first page of the PDF to an image and encodes it in base64 for Gemini.
 
--Prompt Gemini 2.5 pro  – Prompts the LLM to evaluate resume vs job description.
+-Prompting Gemini 2.5 Pro – Sends the job description and resume content to generate evaluation text.
 
--Parse Response – Extract missing keywords, final thoughts, and match percentage.
-
--Display in UI – Results are shown in a user-friendly Streamlit interface.
+-Display in UI – Streamlit displays AI-generated insights and recommendations for the candidate.
