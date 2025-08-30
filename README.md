@@ -2,7 +2,7 @@
 
 ## 📊 Automated Applicant Tracking System (ATS) Resume Analyzer
 
-This project allows users to upload their resumes (PDF) and compare them against a job description. It leverages a Flan-T5 large model to evaluate resumes, detect missing keywords, and estimate a match percentage.
+This project allows users to upload their resumes (PDF) and compare them against a job description. It leverages a Gemini 2.5 pro model to evaluate resumes, detect missing keywords, and estimate a match percentage.
 
 ### Features
 
@@ -28,7 +28,7 @@ This project allows users to upload their resumes (PDF) and compare them against
 
 -PDF to Text – PyPDF2 extracts raw text from uploaded resumes.
 
--Prompt Flan-T5 – Prompts the LLM to evaluate resume vs job description.
+-Prompt Gemini 2.5 pro  – Prompts the LLM to evaluate resume vs job description.
 
 -Parse Response – Extract missing keywords, final thoughts, and match percentage.
 
