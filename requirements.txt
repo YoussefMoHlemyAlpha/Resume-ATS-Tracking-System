@@ -1,0 +1,6 @@
+streamlit 
+pdf2image
+google-generativeai
+python-dotenv
+transformers
+torch
