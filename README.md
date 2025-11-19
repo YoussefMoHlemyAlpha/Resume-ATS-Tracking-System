@@ -1,5 +1,5 @@
 
- 
+   
 ## 📊 Automated Applicant Tracking System (ATS) Resume Analyzer
 
 This project allows users to upload their resumes (PDF) and compare them against a job description. It leverages a Gemini 2.5 pro model to evaluate resumes, detect missing keywords, and estimate a match percentage.
